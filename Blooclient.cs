@@ -185,7 +185,6 @@ namespace ki113d.CsBloocoin {
             
             CmdReply<T> cmd = new CmdReply<T>();
             String re = String.Empty;
-            Console.WriteLine("Command: {0}", temp.ToString());
             using (SocketHandler sHandler = new SocketHandler(ip, port)) {
                 if (sHandler.connect()) {
                     sHandler.send(JsonConvert.SerializeObject(temp));
