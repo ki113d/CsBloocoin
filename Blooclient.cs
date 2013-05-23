@@ -95,6 +95,22 @@ namespace ki113d.CsBloocoin {
         // Client util functions
 
         /// <summary>
+        /// Getter for the client instances address.
+        /// </summary>
+        /// <returns>The address for this instance.</returns>
+        public String getAddress() {
+            return address;
+        }
+
+        /// <summary>
+        /// Getter for the client instances pwd.
+        /// </summary>
+        /// <returns>The pwd for this instance.</returns>
+        public String getPwd() {
+            return pwd;
+        }
+
+        /// <summary>
         /// Getter for the directory path of the .bloocoin folder
         /// </summary>
         /// <returns>.bloocoin directory path.</returns>
